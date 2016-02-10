@@ -1,0 +1,10 @@
+{
+  "name": "graphql-relay",
+  "main": "graphql-relay.d.ts",
+  "author": "Nitin Tutlani <nitintutlani@yahoo.com>",
+  "dependencies": {},
+  "devDependencies": {},
+  "ambientDependencies": {
+    "graphql": "github:nitintutlani/typed-graphql"
+  }
+}
