@@ -15,7 +15,8 @@ declare module "graphql-relay" {
         GraphQLFieldConfigArgumentMap,
         GraphQLResolveInfo,
         GraphQLInterfaceType,
-        GraphQLInputType
+        GraphQLInputType,
+        GraphQLOutputType
     } from "graphql";
 
     export var forwardConnectionArgs: GraphQLFieldConfigArgumentMap;
@@ -165,8 +166,8 @@ declare module "graphql-relay" {
 
 // mutation/mutation.js
 
-    type mutationFn = ((Object, GraphQLResolveInfo) => Object) |
-        ((Object, GraphQLResolveInfo) => Promise<Object>);
+    type mutationFn = ((Object: Object, GraphQLResolveInfo: GraphQLResolveInfo) => Object) |
+        ((Object: Object, GraphQLResolveInfo: GraphQLResolveInfo) => Promise<Object>);
 
     type MutationConfig = {
         name: string,
@@ -186,8 +187,8 @@ declare module "graphql-relay" {
         nodeField: GraphQLFieldConfig
     };
 
-    type typeResolverFn = ((any) => GraphQLObjectType) |
-        ((any) => Promise<GraphQLObjectType>);
+    type typeResolverFn = ((any: any) => GraphQLObjectType) |
+        ((any : any) => Promise<GraphQLObjectType>);
 
     /**
      * Given a function to map from an ID to an underlying object, and a function
