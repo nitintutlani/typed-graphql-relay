@@ -15,7 +15,8 @@ declare module "graphql-relay" {
         GraphQLFieldConfigArgumentMap,
         GraphQLResolveInfo,
         GraphQLInterfaceType,
-        GraphQLInputType
+        GraphQLInputType,
+        GraphQLOutputType
     } from "graphql";
 
     export var forwardConnectionArgs: GraphQLFieldConfigArgumentMap;
