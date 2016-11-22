@@ -201,7 +201,7 @@ declare module "graphql-relay" {
      * interface without a provided `resolveType` method.
      */
     export function nodeDefinitions(
-        idFetcher: ((id: string, info: GraphQLResolveInfo) => any),
+        idFetcher: ((id: string, context: any, info: GraphQLResolveInfo) => any),
         typeResolver?: typeResolverFn
     ): GraphQLNodeDefinitions;
 
